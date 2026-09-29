@@ -1,0 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    width: 10px;
+    /* background-color: blue; */
+    padding: 20px 30px; 
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-logo {
+    max-width: 200px;
+    height: 100%;
+    width: 200px;
+}
+
+section {
+    padding: 20px;
+}
+
+.card-star {
+    height: 14px;
+}
+
+.hotel-card {
+    width: 500px;
+    padding: 20px 20px;
+}
+
+ .hotel-image {
+    width: 400px;
+    padding: 20px 20px;
+    border-radius: 10%;
+}
+
+.hotel-card h1, p {
+    width: 500px;
+} 
+
+/* Card style */
+.contact-cards {
+  display: flex;
+  flex-wrap: nowrap;       /* prevents wrapping to a new line */
+  gap: 5px;
+  padding: 10px;
+  overflow-x: auto;        /* lets you scroll sideways if cards overflow the screen */
+  position: relative;      /* establishes positioning context for the badge */
+}
+
+.contact-card {
+   max-width: 200px;
+   position: relative;   /* <-- this is what's missing */
+}
+
+.contact-card p {
+   max-width: 200px;
+}
+
+ .card-image {
+    width: 180px;
+    height: 200px;
+    padding: 10px 10px;
+    border-radius: 10%;
+    /* object-fit: cover;   keeps the image from stretching/distorting */
+    /* display: block; */
+}
+
+.info-group img {
+    width:  10px;
+    height: 10px;
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ffffff;
+  color: #060606;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 6px 6px;
+  border-radius: 4px;
+  z-index: 2;   /* ensures it sits above the image */
+}

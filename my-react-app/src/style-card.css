@@ -1,0 +1,129 @@
+
+html {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+
+/*   My Card CSS  */
+/*************************************************/
+.container-main {
+    width: 320px;
+    margin: 30px auto;
+    background-color: #1a1b21;
+    color: #ffffff;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile image */
+.container-main > div:first-child img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+/* Name and designation */
+.container-main > div:nth-child(2) {
+    text-align: center;
+    padding: 12px 15px 5px;
+}
+
+.container-main h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+     text-align: center;
+}
+
+.container-main p {
+    margin: 0 0 5px;
+    font-size: 14px;
+     text-align: center;
+}
+
+.container-main > div:nth-child(2) p {
+    margin: 4px 0;
+}
+
+.container-main > div:nth-child(2) p:first-of-type {
+    /* color: #f3a847; */
+    font-size: 14px;
+}
+
+.container-main > div:nth-child(2) p:last-of-type {
+    color: #cccccc;
+    font-size: 12px;
+}
+
+/* Buttons */
+.button-link {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 20px 15px;
+    
+}
+
+.button-link button {
+    width: 120px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-link > button:nth-child(2) {
+    width: 120px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #492ceb;
+}
+
+/* About & Interests */
+.container-main > div:nth-child(4),
+.container-main > div:nth-child(5) {
+    padding: 5px 25px;
+}
+
+.container-main h3 {
+    margin: 8px 0 5px;
+    font-size: 16px;
+}
+
+
+/* Footer */
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 15px;
+    padding: 18px 10px;
+
+    background-color: #6a6b70;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footer-link span {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer-link span:hover {
+    opacity: 1;
+}
