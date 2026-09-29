@@ -14,57 +14,137 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+===============================================================================
+React Application Course
+===============================================================================
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have installed node js & npm 
+To check this 
+->node -v
+->npm -v 
+If not then install it first to proceed React.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Create new Project->npx create-react-app my-react-app  
+	  wait--(it will take few mins to install all react dependencies like react, react-dom, react-scripts etc)
+2. Start server->cd my-react-app 
+3. and run-> npm start  
+4. Open browser with-> http://localhost:3000/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+What we have to Learn
+=============================================
+1. JSX 
+2. Props
+3. Array.maps()
+4. Data Mapping
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+=============================OR Create Project Manually==================================
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create new folder for react-web-page
 
-### Analyzing the Bundle Size
+mkdir react-app-devs
+cd react-app-devs
+npm init -y
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Install react 17->npm install react@17 react-dom@17
+2. Install webpack ->npm install --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin 
+3. Install Babel 7 ->npm install --save-dev @babel/core@7 @babel/preset-env@7 @babel/preset-react@7 babel-loader
+5. Create folders -> public and src -> put public/index.html & inside src/index.js; index.css; etc
+6. Create all these files inside the project folder ->.babelrc
+{
+  "sourceType": "module",
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": "commonjs"
+    }],
+    ["@babel/preset-react", {
+      "runtime": "classic"
+    }]
+  ]
+}
 
-### Making a Progressive Web App
+├── package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+└── webpack.config.js
 
-### Advanced Configuration
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+module.exports = {
+    mode: "development",
 
-### Deployment
+    entry: "./src/index.js",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "bundle.js",
+        clean: true
+    },
 
-### `npm run build` fails to minify
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            }
+        ]
+    },
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./public/index.html"
+        })
+    ],
+
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "dist")
+        },
+        port: 3000
+    }
+};
+
+--->
+6. Create public/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React 17 Devs</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+</body>
+</html>
+7. and index.js ->
+
+'''
+function Page(){
+    return (
+        <div>
+            <h1>It is my first React page.</h1>
+        </div>
+    )
+}
+
+ReactDOM.render(
+    <Page />, 
+    document.getElementById("root")
+)
+'''
+7. Start it-> npm start
+8. Open browser (if not opened): http://localhost:3000
