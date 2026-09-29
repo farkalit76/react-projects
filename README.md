@@ -1,5 +1,20 @@
-# react-projects
-react-projects with @17 version
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
 
 ===============================================================================
 React Application Course
@@ -34,6 +49,7 @@ What we have to Learn
 
 
 =============================OR Create Project Manually==================================
+
 Create new folder for react-web-page
 
 mkdir react-app-devs
@@ -130,7 +146,3 @@ ReactDOM.render(
 
 7. Start it-> npm start
 8. Open browser (if not opened): http://localhost:3000
-
-
-
-
