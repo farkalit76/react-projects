@@ -2,6 +2,10 @@ import React from "react"
 
 export default function About(){
 
+    React.useEffect(() => {
+          document.title = "Farkalit Usman | Java Consultant | Senior Java Developer"
+      }, []);
+    
     return (
        <div className="page-container">
 
