@@ -22,10 +22,10 @@ webpack-dev-server: 6
 1. Create new Project->npx create-react-app my-react-app  
 	  wait--(it will take few mins to install all react dependencies like react, react-dom, react-scripts etc)
 2. Start server->cd my-react-app 
-  Install react 17-> npm install react@17 react-dom@17
-  For React Router > npm install react-router-dom@6 
-3. and run-> npm start  
-4. Open browser with-> http://localhost:3000/
+3. Install react 17-> npm install react@17 react-dom@17
+4. For React Router > npm install react-router-dom@6 
+5. and run-> npm start  
+6. Open browser with-> http://localhost:3000/
 
 ## Available Scripts
 
