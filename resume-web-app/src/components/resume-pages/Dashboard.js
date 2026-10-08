@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 
 
 export default function Dashboard() {
+
+  React.useEffect(() => {
+          document.title = "Farkalit Usman | Java Consultant | Senior Java Developer"
+      }, []);
+  
   return (
     <div className="page-container dashboard">
 
