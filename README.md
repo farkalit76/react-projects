@@ -18,7 +18,7 @@ Webpack: 5
 webpack-dev-server: 6
 
 
-
+# Create New React Project
 1. Create new Project->npx create-react-app my-react-app  
 	  wait--(it will take few mins to install all react dependencies like react, react-dom, react-scripts etc)
 2. Start server->cd my-react-app 
@@ -88,7 +88,7 @@ If not then install it first to proceed React.
 
 
 
-=============================OR Create Project Manually==================================
+# OR Create Project Manually
 
 Create new folder for react-web-page
 
