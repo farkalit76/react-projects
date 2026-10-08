@@ -41,9 +41,7 @@ You may also see any lint errors in the console.
 
 
 
-===============================================================================
-React Application Course
-===============================================================================
+# React Application Course
 
 https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
 
@@ -63,9 +61,9 @@ If not then install it first to proceed React.
 
 
 
-=============================================
-What we have to Learn
-=============================================
+
+# What we have to Learn
+
 1. JSX 
 2. Props
 3. Array.map()
