@@ -1,0 +1,82 @@
+html {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    width: 10px;
+    padding: 20px 30px; 
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: coral;
+}
+
+.nav-logo {
+    max-width: 200px;
+    height: 100%;
+    width: 200px;
+    align-self: center;
+}
+
+
+/* Travel Card style */
+/* Container for all travel cards — stacks them vertically, one per row */
+.travel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Each individual card — image + content side by side */
+.travel-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.travel-image {
+  width: 250px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;   /* keeps image from shrinking when content is long */
+}
+
+.travel-content {
+  display: flex;
+  height: 360px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.travel-content h3 {
+  margin: 0 0 6px 0;
+}
+
+.travel-content p {
+  margin: 0;
+  overflow-wrap: break-word;   /* wraps long words instead of overflowing the box */
+  word-wrap: break-word;       /* fallback for older browsers */
+  white-space: normal;         /* ensures text wraps onto multiple lines */
+  max-width: 400px;             /* prevents content from pushing past its container */
+}
+
+.travel-content span {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  
+}
+
