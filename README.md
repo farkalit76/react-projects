@@ -2,6 +2,31 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
+
+
+Make sure you have installed node js & npm 
+To check this 
+->node -v (22.20.0)
+->npm -v  (11.6.1)
+If not then install it first to proceed React.
+
+React: 17.0.2
+React DOM: 17.0.2
+React Router: 6.30.6
+Webpack: 5
+webpack-dev-server: 6
+
+
+
+1. Create new Project->npx create-react-app my-react-app  
+	  wait--(it will take few mins to install all react dependencies like react, react-dom, react-scripts etc)
+2. Start server->cd my-react-app 
+  Install react 17-> npm install react@17 react-dom@17
+  For React Router > npm install react-router-dom@6 
+3. and run-> npm start  
+4. Open browser with-> http://localhost:3000/
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -38,13 +63,30 @@ If not then install it first to proceed React.
 
 
 
+=============================================
 What we have to Learn
 =============================================
 1. JSX 
 2. Props
-3. Array.maps()
+3. Array.map()
 4. Data Mapping
-
+5. Web App (Dynamic:Read/Write/Update)[Static Example: News, Blogs, Recipes etc]
+   -Forms, Event Listener, (Props vs State), Conditional Listening
+   Props: A value which is comming from the above as Properties. It is immutable.
+   State: React.useState(0)It is a value which is maneged by component. 
+          It is mutable(changed). Similar to the varibles declared inside a function.
+   const [count, setCount] = React.useState(0);
+   Passing data to component: Pass data to another compnent (props or state)
+   Forms & Event Listeners : onClick....
+   API Calls & Effects : React.useEffect() -> fetch()...
+   React Router: For multiple HTML pages interaction > npm install react-router-dom@6   {this is compatible with react @17}
+   CSS-in-JS : css in Javascript directly
+   More Hooks: 
+   <Bob Ziroll> : https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
+   
+6. Form, Fields, Button
+7. Rest API call and React.useEffect()
+8. Header Token
 
 
 
