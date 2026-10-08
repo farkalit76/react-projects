@@ -2,6 +2,10 @@ import React from "react"
 
 export default function Contact() {
 
+  React.useEffect(() => {
+          document.title = "Farkalit Usman | Java Consultant | Senior Java Developer"
+      }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
