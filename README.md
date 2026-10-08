@@ -69,22 +69,20 @@ If not then install it first to proceed React.
 3. Array.map()
 4. Data Mapping
 5. Web App (Dynamic:Read/Write/Update)[Static Example: News, Blogs, Recipes etc]
-   -Forms, Event Listener, (Props vs State), Conditional Listening
-   Props: A value which is comming from the above as Properties. It is immutable.
-   State: React.useState(0)It is a value which is maneged by component. 
+6.   -Forms, Event Listener, (Props vs State), Conditional Listening
+7.   Props: A value which is comming from the above as Properties. It is immutable.
+8.   State: React.useState(0)It is a value which is maneged by component. 
           It is mutable(changed). Similar to the varibles declared inside a function.
-   const [count, setCount] = React.useState(0);
-   Passing data to component: Pass data to another compnent (props or state)
-   Forms & Event Listeners : onClick....
-   API Calls & Effects : React.useEffect() -> fetch()...
-   React Router: For multiple HTML pages interaction > npm install react-router-dom@6   {this is compatible with react @17}
-   CSS-in-JS : css in Javascript directly
-   More Hooks: 
-   <Bob Ziroll> : https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
-   
-6. Form, Fields, Button
-7. Rest API call and React.useEffect()
-8. Header Token
+          const [count, setCount] = React.useState(0);
+9.   Passing data to component: Pass data to another compnent (props or state)
+10.   Forms, Fields, Button & Event Listeners : onClick....
+11.  Rest API Calls & Effects : React.useEffect() -> fetch()...
+12.  Header Token
+13.  React Router: For multiple HTML pages interaction > npm install react-router-dom@6
+    {this is compatible with react @17}
+14.   CSS-in-JS : css in Javascript directly
+15. More Hooks: <Bob Ziroll> : https://www.youtube.com/watch?v=bMknfKXIFA8&t=594s
+
 
 
 
